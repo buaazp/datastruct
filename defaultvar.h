@@ -18,6 +18,13 @@ typedef struct{
 
 typedef struct node
 {
-    int data;
+    ElemType data;
     struct node *next;
 }NODE;
+
+typedef struct dnode
+{
+	ElemType data;
+	struct dnode *prior;
+	struct dnode *next;
+}dNode;
