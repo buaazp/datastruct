@@ -5,9 +5,7 @@ int main(void)
 {
 	int n = 5;
 	//LinkList *L = (LinkList *)malloc(sizeof(LNode));
-	LinkList L;
-	//InitLinkList(L);
-	CreateLinkList(L, n);
-	DisplayLinkList(L);
+	NODE *L = createNode(n);
+	printNode(L);
 	return 0;
 }

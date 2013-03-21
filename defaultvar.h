@@ -16,7 +16,8 @@ typedef struct{
     int listsize;
 }SqList;
 
-typedef struct LNode{
-	ElemType data;
-	struct LNode *next;
-}LNode, *LinkList;
+typedef struct node
+{
+    int data;
+    struct node *next;
+}NODE;

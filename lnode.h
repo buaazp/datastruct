@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "defaultvar.h"
 
-
-void InitLinkList(LinkList L);
-void DisplayLinkList(LinkList L);
-void CreateLinkList(LinkList L, int n);
+NODE* createNode (int n);
+void printNode(NODE *head);
+int deleteNode(NODE *head, int i);
+int insertNode(NODE *head, NODE *p, int k);

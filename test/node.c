@@ -1,8 +1,17 @@
 #include <stdio.h>
-#include "lnode.h"
 
+typedef struct node
+{
+    int data;
+    struct node *next;
+}NODE;
 
-NODE* createNode (int n)
+NODE* create (int n);
+void print(NODE *head);
+int deleteNode(NODE *head, int i);
+int insertNode(NODE *head, NODE *p, int k);
+
+NODE* create (int n)
 {
     NODE *head, *p, *last;
     int i;
@@ -11,8 +20,8 @@ NODE* createNode (int n)
         p = (NODE*)malloc(sizeof(NODE));
         if (p == NULL)
             exit(0);
-        scanf("%d", &(p->data));
-        //p->data = i+1;
+        //scanf("%d", &(p->data));
+        p->data = i+1;
         p->next = NULL;
         if(i == 0)
         {
@@ -36,7 +45,7 @@ int deleteNode(NODE *head, int i)
     for(j=1,q=head; j<i-1 && q->next != NULL; j++)
     {
         q = q->next;
-        printNode(q);
+        print(q);
     }
     if(q->next != NULL)
     {
@@ -66,7 +75,7 @@ int insertNode(NODE *head, NODE *p, int k)
     return 1;
 }
 
-void printNode(NODE *head)
+void print(NODE *head)
 {
     NODE *p;
     p = head;
@@ -86,3 +95,19 @@ void printNode(NODE *head)
         printf("null node!\n");
 }
 
+int main(void)
+{
+    int n, i, k;
+    printf("Please input node length: ");
+    scanf("%d", &n);
+    NODE *head = create(n);
+    //printf("Please input the node your want to delete: ");
+    //scanf("%d", &i);
+    //deleteNode(head, i);
+    printf("Please input the node your want to insert: ");
+    scanf("%d", &k);
+    NODE *p = create(1);
+    insertNode(head, p, k);
+    print(head);
+    return 0;
+}
