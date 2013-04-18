@@ -37,3 +37,9 @@ test/array.dSYM/Contents/Resources/DWARF/array
 .gitignore
 
 .gitignore
+
+*.swp
+
+graph.dSYM/Contents/Info.plist
+
+graph.dSYM/Contents/Resources/DWARF/graph
