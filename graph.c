@@ -1,46 +1,10 @@
 #include <stdio.h>
-
-#define MAX 30
-
-typedef int etype;
-
-//邻接表结点
-typedef struct arc
-{
-    int adv; //顶点序号
-    struct arc *nextarc;
-}arctype;
-
-//顶点
-typedef struct
-{
-    etype vertex;
-    arctype *firstarc;
-    arctype *lastarc;
-}vertextype;
-
-int locVertex(vertextype *graph, int v);
-vertextype* createGraph(int n, int e);
-void printGraph(vertextype *graph, int n);
-
-int main()
-{
-    int n, e;
-    vertextype *graph;
-
-    printf("\n输入图的顶点个数n和边数e:");
-    scanf("%d%d", &n, &e);
-    graph = createGraph(n, e);
-    
-    printGraph(graph, n);
-    
-    return 0;
-}
+#include "graph.h"
 
 vertextype* createGraph(int n, int e)
 {
     int k, i, j;
-    etype c, v1, v2;
+    datatype c, v1, v2;
     arctype *p, *q;
     
     vertextype *graph = (vertextype *) malloc (MAX * sizeof(vertextype));
