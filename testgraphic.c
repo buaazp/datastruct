@@ -32,10 +32,16 @@
  * (0,2)2
  * (0,1)3
  *
+ *
+ *
+ * 加入toposort之后的某个有向网输出示例（注意与上述例子的图不同）：
+ * 拓扑排序：
+ * 9->2->1->3->7->4->5->8->6->^
+ *
  */
 
 #include <stdio.h>
-#include "graphtype.h"
+#include "graphic.h"
 
 int main()
 {
@@ -43,16 +49,16 @@ int main()
     MGraph_L G;
     int i, j, d, g[max][max];
     char a = 'a';
-    d = creatMGraph_L(&G);
+    d = creatGraph(&G, &gra);
     if (d > 0)
     {
-        creatadj(&gra, G);
+        // creatadj(&gra, G);
         printf("邻接矩阵表示：\n");
         printMatrix(G);
         printf("邻接表表示：\n");
         printAlList(gra);
         printf("广度优先遍历：\n");
-        bfstra(gra);
+        bfs(gra, 0);
         printf("深度优先遍历\n");
         dfstra(gra);
         printf("Prim生成树：\n");
@@ -62,6 +68,8 @@ int main()
         prim(g, d);
         printf("Kruscal生成树：\n");
         kruscal_arc(G, gra);
+        printf("拓扑排序：\n");
+        toposort(gra);
     }
     else
         printf("图G构建失败！\n");

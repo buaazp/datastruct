@@ -25,21 +25,54 @@ typedef struct
 
 int localvex(MGraph_L G, char v) //返回V的位置
 {
-    int i = 0;
-    while (G.vexs[i] != v)
-        ++i;
-    return i;
+    int i;
+    for(i = 0; i < G.vexnum; i++)
+    {
+        if(G.vexs[i] == v)
+            return i;
+    }
+    return -1;
 }
+//.............邻接链表定义............
+typedef struct arcnode//弧结点
+{
+    int adjvex;//该弧指向的顶点的位置
+    struct arcnode *nextarc;//弧尾相同的下一条弧
+    char *info;//该弧信息
+    int dut;//该弧的度
+} arcnode;
 
-int creatMGraph_L(MGraph_L *G)//创建图用邻接矩阵表示
+typedef struct vnode//邻接链表顶点头接点
+{
+    char data;//结点信息
+    int indgree; //入度
+    arcnode *firstarc;//指向第一条依附该结点的弧的指针
+} vnode, adjlist;
+
+typedef struct//图的定义
+{
+    adjlist vertices[max];
+    int vexnum, arcnum;
+    int kind;
+} algraph;
+
+int visited[max];//访问标记
+
+int creatGraph(MGraph_L *G, algraph *ga)//创建图用邻接矩阵表示
 {
     char v1, v2, tmp;
     int i, j, k, w;
+    int n, e;
+    arcnode *p, *q;
     printf("…………创建无向图…………\n请输入图G顶点和弧的个数(n e):");
     // cout << "…………创建无向图…………" << endl << "请输入图G顶点和弧的个数:(4 6)不包括“()”" << endl;
     // cin >> G.vexnum >> G.arcnum;
-    scanf("%d%d", &G->vexnum, &G->arcnum);
-    for (i = 0; i != G->vexnum; ++i)
+    scanf("%d%d", &n, &e);
+    G->vexnum = n;
+    G->arcnum = e;
+    ga->vexnum = n;
+    ga->arcnum = e;
+    for (i = 0; i != n; ++i)
     {
         // cout << "输入顶点" << i << endl;
         // cin >> G.vexs[i];
@@ -50,6 +83,8 @@ int creatMGraph_L(MGraph_L *G)//创建图用邻接矩阵表示
             tmp = getchar();
         }
         G->vexs[i] = tmp;
+        ga->vertices[i].data = tmp;
+        ga->vertices[i].firstarc = NULL;
         while((tmp = getchar()) != '\n');
     }
     for (i = 0; i != G->vexnum; ++i)
@@ -82,11 +117,26 @@ int creatMGraph_L(MGraph_L *G)//创建图用邻接矩阵表示
 
         i = localvex(*G, v1); //确定顶点V1和V2在图中的位置
         j = localvex(*G, v2);
-        G->arcs[i][j].adj = w;
-        G->arcs[j][i].adj = w;
+        if(i != -1 && j != -1)
+        {
+            G->arcs[i][j].adj = w;
+            G->arcs[j][i].adj = w;
+            q = (arcnode *) malloc (sizeof(arcnode));
+            q->adjvex = j;
+            q->dut = w;
+            q->nextarc = ga->vertices[i].firstarc;
+            ga->vertices[i].firstarc = q;
+            ga->vertices[j].indgree++;
+        }
+        else
+        {
+            printf("[%c] 或 [%c]不是图中的顶点.\n", v1, v2);
+            k--;
+        }
     }
     // cout << "图G邻接矩阵创建成功！" << endl;
     printf("图G邻接矩阵创建成功！\n");
+    printf("图G邻接链表创建成功！\n");
     return G->vexnum;
 }
 
@@ -103,29 +153,7 @@ void printMatrix(MGraph_L G) //邻接矩阵的输出
     }
 }
 
-int visited[max];//访问标记
-int we;
-
-typedef struct arcnode//弧结点
-{
-    int adjvex;//该弧指向的顶点的位置
-    struct arcnode *nextarc;//弧尾相同的下一条弧
-    char *info;//该弧信息
-} arcnode;
-
-typedef struct vnode//邻接链表顶点头接点
-{
-    char data;//结点信息
-    arcnode *firstarc;//指向第一条依附该结点的弧的指针
-} vnode, adjlist;
-
-typedef struct//图的定义
-{
-    adjlist vertices[max];
-    int vexnum, arcnum;
-    int kind;
-} algraph;
-
+/*
 //…………………………………………队列定义……………………
 typedef struct qnode
 {
@@ -138,22 +166,17 @@ typedef struct
     queueptr front;
     queueptr rear;
 } linkqueue;
+*/
 //………………………………………………………………………
-
-typedef struct acr
-{
-    int pre;//弧的一结点
-    int bak;//弧另一结点
-    int weight;//弧的权
-}edg;
-
-int creatadj(algraph *gra, MGraph_L G) //用邻接表存储图
+/*
+int creatadj(algraph *gra, MGraph_L G) //由已知邻接矩阵创建邻接链表表示图，需要时使用
 {
     int i = 0, j = 0;
     arcnode *arc, *tem, *p;
     for (i = 0; i != G.vexnum; ++i)
     {
         gra->vertices[i].data = G.vexs[i];
+        gra->vertices[i].indgree = 0;
         gra->vertices[i].firstarc = NULL;
     }
     for (i = 0; i != G.vexnum; ++i)
@@ -201,6 +224,7 @@ int creatadj(algraph *gra, MGraph_L G) //用邻接表存储图
     printf("图G邻接表创建成功！\n");
     return 1;
 }
+*/
 
 void printAlList(algraph gra) //邻接表输出
 {
@@ -209,7 +233,7 @@ void printAlList(algraph gra) //邻接表输出
     {
         arcnode *p;
         // cout << i << " ";
-        printf("%d->", i);
+        printf("%d(%d)->", i, gra.vertices[i].indgree);
         p = gra.vertices[i].firstarc;
         while (p != NULL)
         {
@@ -222,28 +246,12 @@ void printAlList(algraph gra) //邻接表输出
     }
 }
 
+/*
 int firstadjvex(algraph gra, vnode v) //返回依附顶点V的第一个点
 //即以V为尾的第一个结点
 {
     if (v.firstarc != NULL)
         return v.firstarc->adjvex;
-}
-
-int nextadjvex(algraph gra, vnode v, int w) //返回依附顶点V的相对于W的下一个顶点
-{
-    arcnode *p;
-    p = v.firstarc;
-    while (p != NULL && p->adjvex != w)
-    {
-        p = p->nextarc;
-    }
-    if (p->adjvex == w && p->nextarc != NULL)
-    {
-        p = p->nextarc;
-        return p->adjvex;
-    }
-    if (p->adjvex == w && p->nextarc == NULL)
-        return -10;
 }
 
 int initqueue(linkqueue *q)//初始化队列
@@ -288,69 +296,68 @@ int queueempty(linkqueue q)//判断队为空
     if (q.front == q.rear) return 1;
     return 0;
 }
+*/
 
-void bfstra(algraph gra)//广度优先遍历
+void bfs(algraph graph, int v)
 {
-    int i, e;
-    linkqueue q;
-    for (i = 0; i != gra.vexnum; ++i)
+    int n = graph.vexnum;
+    arcnode *p;
+    int queue[max], front = 0, rear = 0;
+    int w, i;
+    for(i = 0; i < n; i++)
         visited[i] = 0;
-    initqueue(&q);
-    for (i = 0; i != gra.vexnum; ++i)
-        if (!visited[i])
+    visited[v] = 1;
+    printf("%c->", graph.vertices[v].data);
+    rear = (rear + 1) % max;
+    queue[rear] = v;
+    while(front != rear)
+    {
+        front = (front + 1) % max;
+        w = queue[front];
+        p = graph.vertices[w].firstarc;
+        while(p != NULL)
         {
-            visited[i] = 1;
-            // cout << gra.vertices[i].data;
-            printf("%c->", gra.vertices[i].data);
-            enqueue(&q, i);
-            while (!queueempty(q))
+            if(visited[p->adjvex] == 0)
             {
-                dequeue(&q, &e);
-                for (we = firstadjvex(gra, gra.vertices[e]); we >= 0; we = nextadjvex(gra, gra.vertices[e], we))
-                {
-                    if (!visited[we])
-                    {
-                        visited[we] = 1;
-                        // cout << gra.vertices[we].data;
-                        printf("%c->", gra.vertices[we].data);
-                        enqueue(&q, we);
-                    }
-                }
+                visited[p->adjvex] = 1;
+                printf("%c->", graph.vertices[p->adjvex].data);
+                rear = (rear + 1) % max;
+                queue[rear] = p->adjvex;
             }
+            p = p->nextarc;
         }
+    }
     printf("^\n");
 }
 
-int dfs(algraph gra, int i)
+void dfs(algraph graph, int v)
 {
-    visited[i] = 1;
-    int we1;
-    // cout << gra.vertices[i].data;
-    printf("%c->", gra.vertices[i].data);
-    for (we = firstadjvex(gra, gra.vertices[i]); we >= 0; we = nextadjvex(gra, gra.vertices[i], we))
+    arcnode *p;
+    int w;
+    visited[v] = 1;
+    printf("%c->", graph.vertices[v].data);
+    p = graph.vertices[v].firstarc;
+    while(p != NULL)
     {
-        we1 = we;
-        if (visited[we] == 0)
-            dfs(gra, we);
-        we = we1;
+        w = p->adjvex;
+        if(visited[w] == 0)
+            dfs(graph, w);
+        p = p->nextarc;
     }
-    return 1;
 }
 
-int dfstra(algraph gra)
+void dfstra(algraph graph)
 {
-    int i, j;
-    for (i = 0; i != gra.vexnum; ++i)
+    int v;
+    int n = graph.vexnum;
+    for(v = 0; v < n; v++)
+        visited[v] = 0;
+    for(v = 0; v < n; v++)
     {
-        visited[i] = 0;
-    }
-    for (j = 0; j != gra.vexnum; ++j)
-    {
-        if (visited[j] == 0)
-            dfs(gra, j);
+        if(visited[v] == 0)
+            dfs(graph, v);
     }
     printf("^\n");
-    return 0;
 }
 
 int bfstra_fen(algraph gra)//求连通分量
@@ -405,6 +412,12 @@ int prim(int g[][max], int n) //最小生成树PRIM算法
 }
 
 int acrvisited[100];//kruscal弧标记数组
+typedef struct acr
+{
+    int pre;//弧的一结点
+    int bak;//弧另一结点
+    int weight;//弧的权
+}edg;
 
 int find(int acrvisited[], int f)
 {
@@ -458,3 +471,49 @@ void kruscal_arc(MGraph_L G, algraph gra)
         }
     }
 }
+
+void toposort(algraph ga)
+{
+    int i, j, k, m, n, top;
+    n = ga.vexnum;
+    arcnode *p;
+    m = 0;
+    top = -1;
+    for(i = 0; i < n; i++)
+    {
+        if(ga.vertices[i].indgree == 0)
+        {
+            ga.vertices[i].indgree = top; //入度为零的顶点如栈，栈没有实体数组而是用indgree这个成员量来存储，简直屌爆了！
+            top = i;
+        }
+    }
+    while(top != -1)
+    {
+        j = top;
+        top = ga.vertices[top].indgree; //出栈，输出第一个入度为零的顶点
+        printf("%c->", ga.vertices[j].data);
+        m++;
+        p = ga.vertices[j].firstarc;
+        while(p)
+        {
+            k = p->adjvex;
+            ga.vertices[k].indgree--;
+            if(ga.vertices[k].indgree == 0)
+            {
+                ga.vertices[k].indgree = top;
+                top = k;
+            }
+            p = p->nextarc;
+        }
+    }
+    if(m < n)
+        printf("\n该图中存在环!\n");
+    else
+        printf("^\n");
+}
+
+
+
+
+
+
