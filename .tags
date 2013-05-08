@@ -34,6 +34,8 @@ List_Size	test/sqlist2.c	8;"	d	file:
 LocateElem	sqlist.c	/^int LocateElem(SqList *L, ElemType x)$/;"	f
 M	test/array.c	3;"	d	file:
 MAX	bf.c	4;"	d	file:
+MAX	binary.c	3;"	d	file:
+MAX	bitree.h	6;"	d
 MAX	crucialpath.c	44;"	d	file:
 MAX	huffman.c	3;"	d	file:
 MAX	joseph.c	17;"	d	file:
@@ -104,6 +106,9 @@ bfs	test/bfs.c	/^void bfs(vertextype *graph, int v, int n)$/;"	f
 bfstra	test/graphall.cpp	/^void bfstra(algraph gra)\/\/广度优先遍历$/;"	f
 bfstra_fen	graphic.h	/^int bfstra_fen(algraph gra)\/\/求连通分量$/;"	f
 bfstra_fen	test/graphall.cpp	/^int bfstra_fen(algraph gra)\/\/求连通分量$/;"	f
+binarySearch	binary.c	/^int binarySearch(table t, keytype k)$/;"	f
+bitnode	bitree.h	/^typedef struct bitnode$/;"	s
+bitree	bitree.h	/^}*bitree;$/;"	t	typeref:struct:bitnode
 btree	tree.c	/^}btree;$/;"	t	typeref:struct:treeNode	file:
 calNext	kmp.c	/^void calNext(char *t)$/;"	f
 calNext2	kmp.c	/^void calNext2(char *t)$/;"	f
@@ -118,6 +123,7 @@ creatadj	test/graphall.cpp	/^int creatadj(algraph &gra, MGraph_L G) \/\/用邻�
 create	joseph.c	/^linklist * create(int n)$/;"	f
 create	node.c	/^NODE* create (int n)$/;"	f
 create	test/node.c	/^NODE* create (int n)$/;"	f
+createBitree	bitree.h	/^int createBitree(bitree *T)$/;"	f
 createGraph	crucialpath.c	/^vexnode * createGraph(int n, int e)$/;"	f
 createGraph	test/graph.c	/^vertextype* createGraph(int n, int e)$/;"	f
 createGraphMatrix	test/graph.c	/^graphtype * createGraphMatrix(int n, int e)$/;"	f
@@ -142,6 +148,8 @@ data	tree.c	/^    datatype data;$/;"	m	struct:treeNode	file:
 datatype	joseph.c	16;"	d	file:
 datatype	test/graph.h	3;"	d
 datatype	tree.c	37;"	d	file:
+delB	bitree.h	/^int delB(bitree *p)$/;"	f
+delBitree	bitree.h	/^int delBitree(bitree *T, keytype key)$/;"	f
 deleteNode	lnode.c	/^int deleteNode(NODE *head, int i)$/;"	f
 deleteNode	node.c	/^int deleteNode(NODE *head, int i)$/;"	f
 deleteNode	test/node.c	/^int deleteNode(NODE *head, int i)$/;"	f
@@ -199,6 +207,7 @@ init	test/teststruct.c	/^void init(slist *s)$/;"	f
 initCost	shortest.c	/^void initCost()$/;"	f
 initCost	shortestall.c	/^void initCost()$/;"	f
 initqueue	test/graphall.cpp	/^int initqueue(linkqueue &q)\/\/初始化队列$/;"	f
+insertBitree	bitree.h	/^int insertBitree(bitree *T, keytype key)$/;"	f
 insertNode	lnode.c	/^int insertNode(NODE *head, NODE *p, int k)$/;"	f
 insertNode	node.c	/^int insertNode(NODE *head, NODE *p, int k)$/;"	f
 insertNode	test/node.c	/^int insertNode(NODE *head, NODE *p, int k)$/;"	f
@@ -206,14 +215,20 @@ insertdNode	dnode.c	/^int insertdNode(dNode *L, int i, ElemType x)$/;"	f
 int_max	graphic.h	8;"	d
 int_max	test/graphall.cpp	6;"	d	file:
 joseph	joseph.c	/^void joseph(int n, int s, int m)$/;"	f
+key	binary.c	/^    keytype key[MAX];$/;"	m	struct:table	file:
+key	bitree.h	/^    keytype key;$/;"	m	struct:bitnode
+keytype	binary.c	4;"	d	file:
+keytype	bitree.h	5;"	d
 kind	graphic.h	/^    int kind;$/;"	m	struct:__anon4
 kind	test/graphall.cpp	/^    int kind;$/;"	m	struct:__anon14	file:
 kmpIndex	kmp.c	/^int kmpIndex(char *s, char *t)$/;"	f
 kruscal_arc	graphic.h	/^void kruscal_arc(MGraph_L G, algraph gra)$/;"	f
 kruscal_arc	test/graphall.cpp	/^void kruscal_arc(MGraph_L G, algraph gra)$/;"	f
 lastarc	test/graph.h	/^    arctype *lastarc;$/;"	m	struct:__anon9
+lchild	bitree.h	/^    struct bitnode *lchild, *rchild;$/;"	m	struct:bitnode	typeref:struct:bitnode::bitnode
 lchild	huffman.c	/^    unsigned int lchild;$/;"	m	struct:__anon5	file:
 lchild	tree.c	/^    struct treeNode *lchild;$/;"	m	struct:treeNode	typeref:struct:treeNode::treeNode	file:
+length	binary.c	/^    int length;$/;"	m	struct:table	file:
 length	defaultvar.h	/^    int length;$/;"	m	struct:__anon2
 length	test/sqlist2.c	/^    int length;$/;"	m	struct:__anon17	file:
 length	test/teststruct.c	/^    int length;$/;"	m	struct:__anon18	file:
@@ -231,6 +246,7 @@ localvex	graphic.h	/^int localvex(MGraph_L G, char v) \/\/返回V的位置$/;"	f
 localvex	test/graphall.cpp	/^int localvex(MGraph_L G, char v) \/\/返回V的位置$/;"	f
 lowcost	test/graphall.cpp	/^    int lowcost;$/;"	m	struct:__anon16	file:
 main	bf.c	/^int main()$/;"	f
+main	binary.c	/^int main()$/;"	f
 main	crucialpath.c	/^int main()$/;"	f
 main	huffman.c	/^int main()$/;"	f
 main	joseph.c	/^int main()$/;"	f
@@ -249,6 +265,7 @@ main	test/sqlist2.c	/^int main(void)$/;"	f
 main	test/testgraph.c	/^int main()$/;"	f
 main	test/testmalloc.c	/^int main(void)$/;"	f
 main	test/teststruct.c	/^int main(void)$/;"	f
+main	testbitree.c	/^int main()$/;"	f
 main	testdnode.c	/^int main(void)$/;"	f
 main	testgraphic.c	/^int main()$/;"	f
 main	testlnode.c	/^int main(void)$/;"	f
@@ -308,15 +325,19 @@ qnode	test/graphall.cpp	/^typedef struct qnode$/;"	s	file:
 qnode	test/graphall.cpp	/^} qnode, *queueptr;$/;"	t	typeref:struct:qnode	file:
 queueempty	test/graphall.cpp	/^int queueempty(linkqueue q)\/\/判断队为空$/;"	f
 queueptr	test/graphall.cpp	/^} qnode, *queueptr;$/;"	t	typeref:struct:qnode	file:
+rchild	bitree.h	/^    struct bitnode *lchild, *rchild;$/;"	m	struct:bitnode	typeref:struct:bitnode::
 rchild	huffman.c	/^    unsigned int rchild;$/;"	m	struct:__anon5	file:
 rchild	tree.c	/^    struct treeNode *rchild;$/;"	m	struct:treeNode	typeref:struct:treeNode::treeNode	file:
 rear	test/graphall.cpp	/^    queueptr rear;$/;"	m	struct:__anon15	file:
+searchBitree	bitree.h	/^int searchBitree(bitree T, keytype key, bitree f, bitree *p)$/;"	f
 select	huffman.c	/^void select(huffmTree *HT, int n, int *s1, int *s2)$/;"	f
 slist	test/teststruct.c	/^}slist;$/;"	t	typeref:struct:__anon18	file:
 sqlist	test/sqlist2.c	/^}sqlist;$/;"	t	typeref:struct:__anon17	file:
 sqlistInsert	test/sqlist2.c	/^int sqlistInsert(sqlist *L, int i, ElemType x)$/;"	f
 stack	maze.c	/^}stack;$/;"	t	typeref:struct:__anon8	file:
 stuScore	test/array.c	/^int stuScore(int score[], int i)$/;"	f
+table	binary.c	/^typedef struct table$/;"	s	file:
+table	binary.c	/^}table;$/;"	t	typeref:struct:table	file:
 top	maze.c	/^    int top;$/;"	m	struct:__anon8	file:
 toposort	graphic.h	/^void toposort(algraph ga)$/;"	f
 treeNode	tree.c	/^typedef struct treeNode$/;"	s	file:
