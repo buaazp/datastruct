@@ -23,6 +23,7 @@ datastruct
     生成树问题（kruskal算法）
     有向网的关键路径问题
     拓扑排序
+    二分查找
     （以及其他将要加入的内容。。）
 
 ### in planning:
