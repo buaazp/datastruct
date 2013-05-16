@@ -4,367 +4,386 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-AdjMatrix	graphic.h	/^} ArcCell, AdjMatrix[max][max];$/;"	t	typeref:struct:ArcCell
-AdjMatrix	test/graphall.cpp	/^} ArcCell, AdjMatrix[max][max];$/;"	t	typeref:struct:ArcCell	file:
-ArcCell	graphic.h	/^typedef struct ArcCell$/;"	s
-ArcCell	graphic.h	/^} ArcCell, AdjMatrix[max][max];$/;"	t	typeref:struct:ArcCell
-ArcCell	test/graphall.cpp	/^typedef struct ArcCell$/;"	s	file:
-ArcCell	test/graphall.cpp	/^} ArcCell, AdjMatrix[max][max];$/;"	t	typeref:struct:ArcCell	file:
-CC	Makefile	/^CC = gcc$/;"	m
-CFLAGS	Makefile	/^CFLAGS = -g -ggdb3$/;"	m
-CreateSqList	sqlist.c	/^void CreateSqList(SqList *L, int n)$/;"	f
-Createsqlist	test/sqlist2.c	/^void Createsqlist(sqlist *L, int n)$/;"	f
-DestroySqList	sqlist.c	/^void DestroySqList(SqList *L)$/;"	f
-Destroysqlist	test/sqlist2.c	/^void Destroysqlist(sqlist *L)$/;"	f
 ERROR	bf.c	3;"	d	file:
-ERROR	defaultvar.h	6;"	d
-ERROR	joseph.c	18;"	d	file:
-ERROR	test/sqlist2.c	6;"	d	file:
-ElemType	defaultvar.h	/^typedef int ElemType;$/;"	t
-ElemType	test/sqlist2.c	/^typedef int ElemType;$/;"	t	file:
-FALSE	defaultvar.h	4;"	d
-FALSE	test/sqlist2.c	4;"	d	file:
-INF	test/graph.h	6;"	d
-InitSqList	sqlist.c	/^void InitSqList(SqList *L)$/;"	f
-Initsqlist	test/sqlist2.c	/^void Initsqlist(sqlist *L)$/;"	f
-ListIncrement	defaultvar.h	12;"	d
-ListIncrement	test/sqlist2.c	9;"	d	file:
-List_Size	defaultvar.h	11;"	d
-List_Size	test/sqlist2.c	8;"	d	file:
-LocateElem	sqlist.c	/^int LocateElem(SqList *L, ElemType x)$/;"	f
-M	test/array.c	3;"	d	file:
 MAX	bf.c	4;"	d	file:
-MAX	binary.c	3;"	d	file:
-MAX	bitree.h	6;"	d
-MAX	crucialpath.c	44;"	d	file:
-MAX	huffman.c	3;"	d	file:
-MAX	joseph.c	17;"	d	file:
-MAX	kmp.c	3;"	d	file:
-MAX	maze.c	13;"	d	file:
-MAX	shortest.c	3;"	d	file:
-MAX	shortestall.c	3;"	d	file:
-MAX	test/graph.h	5;"	d
-MAX	tree.c	36;"	d	file:
-MAXCOST	shortest.c	4;"	d	file:
-MAXCOST	shortestall.c	4;"	d	file:
-MGraph_L	graphic.h	/^} MGraph_L;$/;"	t	typeref:struct:__anon3
-MGraph_L	test/graphall.cpp	/^} MGraph_L;$/;"	t	typeref:struct:__anon13	file:
-MODULES	Makefile	/^MODULES = testsqlist testlnode$/;"	m
-N	test/array.c	4;"	d	file:
-NODE	defaultvar.h	/^}NODE;$/;"	t	typeref:struct:node
-NODE	node.c	/^}NODE;$/;"	t	typeref:struct:node	file:
-NODE	test/node.c	/^}NODE;$/;"	t	typeref:struct:node	file:
-OBJS	Makefile	/^OBJS = $(addsuffix .o, $(SRCS))$/;"	m
-OK	defaultvar.h	5;"	d
-OK	test/sqlist2.c	5;"	d	file:
-OVERFLOW	defaultvar.h	7;"	d
-OVERFLOW	test/sqlist2.c	7;"	d	file:
-PROJECT	Makefile	/^PROJECT = all$/;"	m
-PrintSqList	sqlist.c	/^void PrintSqList(SqList *L)$/;"	f
-ReserveSqList	sqlist.c	/^int ReserveSqList(SqList *L)$/;"	f
-SRCS	Makefile	/^SRCS = sqlist testsqlist lnode testlnode$/;"	m
-STEP	maze.c	14;"	d	file:
-SqList	defaultvar.h	/^}SqList;$/;"	t	typeref:struct:__anon2
-SqListDelete	sqlist.c	/^int SqListDelete(SqList *L, int i)$/;"	f
-SqListInsert	sqlist.c	/^int SqListInsert(SqList *L, int i, ElemType x)$/;"	f
-TURE	defaultvar.h	3;"	d
-TURE	test/sqlist2.c	3;"	d	file:
-acr	graphic.h	/^typedef struct acr$/;"	s
-acr	test/graphall.cpp	/^typedef struct acr$/;"	s	file:
-acrvisited	graphic.h	/^int acrvisited[100];\/\/kruscal弧标记数组$/;"	v
-acrvisited	test/graphall.cpp	/^int acrvisited[100];\/\/kruscal弧标记数组$/;"	v
-addMaze	maze.c	/^void addMaze(int *p, int col, int i, int j, int var)$/;"	f
-adj	graphic.h	/^    int adj;$/;"	m	struct:ArcCell
-adj	test/graphall.cpp	/^    int adj;$/;"	m	struct:ArcCell	file:
-adjlist	graphic.h	/^} vnode, adjlist;$/;"	t	typeref:struct:vnode
-adjlist	test/graphall.cpp	/^} vnode, adjlist;$/;"	t	typeref:struct:vnode	file:
-adjprint	test/graphall.cpp	/^void adjprint(algraph gra) \/\/邻接表输出$/;"	f
-adjvex	graphic.h	/^    int adjvex;\/\/该弧指向的顶点的位置$/;"	m	struct:arcnode
-adjvex	test/graphall.cpp	/^    int adjvex;$/;"	m	struct:__anon16	file:
-adjvex	test/graphall.cpp	/^    int adjvex;\/\/该弧指向的顶点的位置$/;"	m	struct:arcnode	file:
-adv	crucialpath.c	/^    int adv;$/;"	m	struct:node	file:
-adv	test/graph.h	/^    int adv; \/\/顶点序号$/;"	m	struct:arc
-algraph	graphic.h	/^} algraph;$/;"	t	typeref:struct:__anon4
-algraph	test/graphall.cpp	/^} algraph;$/;"	t	typeref:struct:__anon14	file:
-arc	test/graph.h	/^typedef struct arc$/;"	s
-arcnode	graphic.h	/^typedef struct arcnode\/\/弧结点$/;"	s
-arcnode	graphic.h	/^} arcnode;$/;"	t	typeref:struct:arcnode
-arcnode	test/graphall.cpp	/^typedef struct arcnode\/\/弧结点$/;"	s	file:
-arcnode	test/graphall.cpp	/^} arcnode;$/;"	t	typeref:struct:arcnode	file:
-arcnum	graphic.h	/^    int vexnum, arcnum;$/;"	m	struct:__anon3
-arcnum	graphic.h	/^    int vexnum, arcnum;$/;"	m	struct:__anon4
-arcnum	test/graphall.cpp	/^    int vexnum, arcnum;$/;"	m	struct:__anon13	file:
-arcnum	test/graphall.cpp	/^    int vexnum, arcnum;$/;"	m	struct:__anon14	file:
-arcs	graphic.h	/^    AdjMatrix arcs;$/;"	m	struct:__anon3
-arcs	test/graphall.cpp	/^    AdjMatrix arcs;$/;"	m	struct:__anon13	file:
-arctype	test/graph.h	/^}arctype;$/;"	t	typeref:struct:arc
-bak	graphic.h	/^    int bak;\/\/弧另一结点$/;"	m	struct:acr
-bak	test/graphall.cpp	/^    int bak;\/\/弧另一结点$/;"	m	struct:acr	file:
+getlen	bf.c	/^int getlen(char *s)$/;"	f
 bf	bf.c	/^int bf(char *s, char *t)$/;"	f
-bfs	graphic.h	/^void bfs(algraph graph, int v)$/;"	f
-bfs	test/bfs.c	/^void bfs(vertextype *graph, int v, int n)$/;"	f
-bfstra	test/graphall.cpp	/^void bfstra(algraph gra)\/\/广度优先遍历$/;"	f
-bfstra_fen	graphic.h	/^int bfstra_fen(algraph gra)\/\/求连通分量$/;"	f
-bfstra_fen	test/graphall.cpp	/^int bfstra_fen(algraph gra)\/\/求连通分量$/;"	f
+main	bf.c	/^int main()$/;"	f
+MAX	binary.c	3;"	d	file:
+keytype	binary.c	4;"	d	file:
+table	binary.c	/^typedef struct table$/;"	s	file:
+key	binary.c	/^    keytype key[MAX];$/;"	m	struct:table	file:
+length	binary.c	/^    int length;$/;"	m	struct:table	file:
+table	binary.c	/^}table;$/;"	t	typeref:struct:table	file:
 binarySearch	binary.c	/^int binarySearch(table t, keytype k)$/;"	f
+main	binary.c	/^int main()$/;"	f
+keytype	bitree.h	5;"	d
+MAX	bitree.h	6;"	d
 bitnode	bitree.h	/^typedef struct bitnode$/;"	s
+key	bitree.h	/^    keytype key;$/;"	m	struct:bitnode
+lchild	bitree.h	/^    struct bitnode *lchild, *rchild;$/;"	m	struct:bitnode	typeref:struct:bitnode::bitnode
+rchild	bitree.h	/^    struct bitnode *lchild, *rchild;$/;"	m	struct:bitnode	typeref:struct:bitnode::
 bitree	bitree.h	/^}*bitree;$/;"	t	typeref:struct:bitnode
-btree	tree.c	/^}btree;$/;"	t	typeref:struct:treeNode	file:
-calNext	kmp.c	/^void calNext(char *t)$/;"	f
-calNext2	kmp.c	/^void calNext2(char *t)$/;"	f
-ch	huffman.c	/^    unsigned ch;$/;"	m	struct:__anon6	file:
-closedge	test/graphall.cpp	/^} closedge;$/;"	t	typeref:struct:__anon16	file:
-cost	shortest.c	/^int cost [MAX][MAX];$/;"	v
-cost	shortestall.c	/^int cost [MAX][MAX];$/;"	v
-courseTotal	test/array.c	/^int courseTotal(int score[], int j)$/;"	f
-creatGraph	graphic.h	/^int creatGraph(MGraph_L *G, algraph *ga)\/\/创建图用邻接矩阵表示$/;"	f
-creatMGraph_L	test/graphall.cpp	/^int creatMGraph_L(MGraph_L &G)\/\/创建图用邻接矩阵表示$/;"	f
-creatadj	test/graphall.cpp	/^int creatadj(algraph &gra, MGraph_L G) \/\/用邻接表存储图$/;"	f
-create	joseph.c	/^linklist * create(int n)$/;"	f
-create	node.c	/^NODE* create (int n)$/;"	f
-create	test/node.c	/^NODE* create (int n)$/;"	f
 createBitree	bitree.h	/^int createBitree(bitree *T)$/;"	f
-createGraph	crucialpath.c	/^vexnode * createGraph(int n, int e)$/;"	f
-createGraph	test/graph.c	/^vertextype* createGraph(int n, int e)$/;"	f
-createGraphMatrix	test/graph.c	/^graphtype * createGraphMatrix(int n, int e)$/;"	f
-createGraphMatrix2	test/graph.c	/^graphtype * createGraphMatrix2(int n, int e)$/;"	f
-createNode	lnode.c	/^NODE* createNode (int n)$/;"	f
-createTree	tree.c	/^btree * createTree()$/;"	f
-createdNode	dnode.c	/^dNode *createdNode(int n)$/;"	f
-crucialPath	crucialpath.c	/^void crucialPath(vexnode *dig, int n)$/;"	f
-d1	maze.c	/^    int d1[STEP];$/;"	m	struct:__anon8	file:
-d2	maze.c	/^    int d2[STEP];$/;"	m	struct:__anon8	file:
-dNode	defaultvar.h	/^}dNode;$/;"	t	typeref:struct:dnode
-data	defaultvar.h	/^	ElemType data;$/;"	m	struct:dnode
-data	defaultvar.h	/^    ElemType data;$/;"	m	struct:node
-data	graphic.h	/^    char data;\/\/结点信息$/;"	m	struct:vnode
-data	joseph.c	/^    datatype data;$/;"	m	struct:lnode	file:
-data	node.c	/^    int data;$/;"	m	struct:node	file:
-data	test/graphall.cpp	/^    char data;\/\/结点信息$/;"	m	struct:vnode	file:
-data	test/graphall.cpp	/^    int data;$/;"	m	struct:qnode	file:
-data	test/node.c	/^    int data;$/;"	m	struct:node	file:
-data	test/teststruct.c	/^    int *data;$/;"	m	struct:__anon18	file:
-data	tree.c	/^    datatype data;$/;"	m	struct:treeNode	file:
-datatype	joseph.c	16;"	d	file:
-datatype	test/graph.h	3;"	d
-datatype	tree.c	37;"	d	file:
+searchBitree	bitree.h	/^int searchBitree(bitree T, keytype key, bitree f, bitree *p)$/;"	f
+insertBitree	bitree.h	/^int insertBitree(bitree *T, keytype key)$/;"	f
 delB	bitree.h	/^int delB(bitree *p)$/;"	f
 delBitree	bitree.h	/^int delBitree(bitree *T, keytype key)$/;"	f
-deleteNode	lnode.c	/^int deleteNode(NODE *head, int i)$/;"	f
-deleteNode	node.c	/^int deleteNode(NODE *head, int i)$/;"	f
-deleteNode	test/node.c	/^int deleteNode(NODE *head, int i)$/;"	f
-depthTraver	test/dfs.c	/^void depthTraver(vertextype *graph, int n)$/;"	f
-dequeue	test/graphall.cpp	/^int dequeue(linkqueue &q, int &e) \/\/出队$/;"	f
-dfs	graphic.h	/^void dfs(algraph graph, int v)$/;"	f
-dfs	test/dfs.c	/^void dfs(vertextype *graph, int v, int visited[])$/;"	f
-dfs	test/graphall.cpp	/^int dfs(algraph gra, int i)$/;"	f
-dfstra	graphic.h	/^void dfstra(algraph graph)$/;"	f
-dfstra	test/graphall.cpp	/^int dfstra(algraph gra)$/;"	f
-dijkstra	shortest.c	/^void dijkstra(int n, int v0)$/;"	f
-dir	maze.c	/^    int dir[STEP];$/;"	m	struct:__anon8	file:
-displayHuffm	huffman.c	/^void displayHuffm(huffmCode HC, int n)$/;"	f
-dnode	defaultvar.h	/^typedef struct dnode$/;"	s
-drawMaze	maze.c	/^void drawMaze(int *p, int row, int col)$/;"	f
-drawMaze2	maze.c	/^void drawMaze2(int *p, int row, int col)$/;"	f
+MAX	crucialpath.c	44;"	d	file:
+vextype	crucialpath.c	/^typedef int vextype;$/;"	t	file:
+node	crucialpath.c	/^typedef struct node$/;"	s	file:
+adv	crucialpath.c	/^    int adv;$/;"	m	struct:node	file:
 dut	crucialpath.c	/^    int dut;$/;"	m	struct:node	file:
-dut	graphic.h	/^    int dut;\/\/该弧的度$/;"	m	struct:arcnode
-edg	graphic.h	/^}edg;$/;"	t	typeref:struct:acr
-edg	test/graphall.cpp	/^} edg;$/;"	t	typeref:struct:acr	file:
+next	crucialpath.c	/^    struct node *next;$/;"	m	struct:node	typeref:struct:node::node	file:
 edgenode	crucialpath.c	/^}edgenode;$/;"	t	typeref:struct:node	file:
-edges	test/graph.h	/^    edgetype edges[MAX][MAX];$/;"	m	struct:__anon12
-edgetype	test/graph.h	/^}edgetype;$/;"	t	typeref:struct:__anon11
-elem	defaultvar.h	/^    ElemType *elem;$/;"	m	struct:__anon2
-elem	test/sqlist2.c	/^    ElemType *elem;$/;"	m	struct:__anon17	file:
-enqueue	test/graphall.cpp	/^int enqueue(linkqueue &q, int e) \/\/入队$/;"	f
-find	graphic.h	/^int find(int acrvisited[], int f)$/;"	f
-find	test/graphall.cpp	/^int find(int acrvisited[], int f)$/;"	f
-firstadjvex	test/graphall.cpp	/^int firstadjvex(algraph gra, vnode v) \/\/返回依附顶点V的第一个点$/;"	f
-firstarc	graphic.h	/^    arcnode *firstarc;\/\/指向第一条依附该结点的弧的指针$/;"	m	struct:vnode
-firstarc	test/graph.h	/^    arctype *firstarc;$/;"	m	struct:__anon9
-firstarc	test/graphall.cpp	/^    arcnode *firstarc;\/\/指向第一条依附该结点的弧的指针$/;"	m	struct:vnode	file:
-floyd	shortestall.c	/^void floyd(int n)$/;"	f
-fr	huffman.c	/^    unsigned long fr;$/;"	m	struct:__anon6	file:
-front	test/graphall.cpp	/^    queueptr front;$/;"	m	struct:__anon15	file:
-genEdge	test/graph.c	/^void genEdge(graphtype *ga, int i, int j, int w)$/;"	f
-getElem	dnode.c	/^ElemType getElem(dNode *L, int i)$/;"	f
-getNode	dnode.c	/^dNode *getNode(dNode *L, int i)$/;"	f
-getlen	bf.c	/^int getlen(char *s)$/;"	f
-graphtype	test/graph.h	/^}graphtype;$/;"	t	typeref:struct:__anon12
-horiz	maze.c	/^    int horiz;$/;"	m	struct:__anon7	file:
-huffmCode	huffman.c	/^typedef char **huffmCode;$/;"	t	file:
-huffmTree	huffman.c	/^}huffmTree;$/;"	t	typeref:struct:__anon5	file:
-huffmanCoding	huffman.c	/^huffmCode huffmanCoding(huffmTree *HT, huffmCode HC, wd w[MAX], int n)$/;"	f
-inOrder	tree.c	/^void inOrder(btree *t)$/;"	f
+vertex	crucialpath.c	/^    vextype vertex;$/;"	m	struct:__anon1	file:
 indgree	crucialpath.c	/^    int indgree;$/;"	m	struct:__anon1	file:
-indgree	graphic.h	/^    int indgree; \/\/入度$/;"	m	struct:vnode
-inf	graphic.h	9;"	d
-inf	test/graphall.cpp	7;"	d	file:
-info	graphic.h	/^    char *info;$/;"	m	struct:ArcCell
-info	graphic.h	/^    char *info;\/\/该弧信息$/;"	m	struct:arcnode
-info	test/graphall.cpp	/^    char *info;$/;"	m	struct:ArcCell	file:
-info	test/graphall.cpp	/^    char *info;\/\/该弧信息$/;"	m	struct:arcnode	file:
-init	test/teststruct.c	/^void init(slist *s)$/;"	f
-initCost	shortest.c	/^void initCost()$/;"	f
-initCost	shortestall.c	/^void initCost()$/;"	f
-initqueue	test/graphall.cpp	/^int initqueue(linkqueue &q)\/\/初始化队列$/;"	f
-insertBitree	bitree.h	/^int insertBitree(bitree *T, keytype key)$/;"	f
-insertNode	lnode.c	/^int insertNode(NODE *head, NODE *p, int k)$/;"	f
-insertNode	node.c	/^int insertNode(NODE *head, NODE *p, int k)$/;"	f
-insertNode	test/node.c	/^int insertNode(NODE *head, NODE *p, int k)$/;"	f
+link	crucialpath.c	/^    edgenode *link;$/;"	m	struct:__anon1	file:
+vexnode	crucialpath.c	/^}vexnode;$/;"	t	typeref:struct:__anon1	file:
+main	crucialpath.c	/^int main()$/;"	f
+locVertex	crucialpath.c	/^int locVertex(vexnode *graph, int v)$/;"	f
+createGraph	crucialpath.c	/^vexnode * createGraph(int n, int e)$/;"	f
+crucialPath	crucialpath.c	/^void crucialPath(vexnode *dig, int n)$/;"	f
+TURE	defaultvar.h	3;"	d
+FALSE	defaultvar.h	4;"	d
+OK	defaultvar.h	5;"	d
+ERROR	defaultvar.h	6;"	d
+OVERFLOW	defaultvar.h	7;"	d
+ElemType	defaultvar.h	/^typedef int ElemType;$/;"	t
+List_Size	defaultvar.h	11;"	d
+ListIncrement	defaultvar.h	12;"	d
+elem	defaultvar.h	/^    ElemType *elem;$/;"	m	struct:__anon2
+length	defaultvar.h	/^    int length;$/;"	m	struct:__anon2
+listsize	defaultvar.h	/^    int listsize;$/;"	m	struct:__anon2
+SqList	defaultvar.h	/^}SqList;$/;"	t	typeref:struct:__anon2
+node	defaultvar.h	/^typedef struct node$/;"	s
+data	defaultvar.h	/^    ElemType data;$/;"	m	struct:node
+next	defaultvar.h	/^    struct node *next;$/;"	m	struct:node	typeref:struct:node::node
+NODE	defaultvar.h	/^}NODE;$/;"	t	typeref:struct:node
+dnode	defaultvar.h	/^typedef struct dnode$/;"	s
+data	defaultvar.h	/^	ElemType data;$/;"	m	struct:dnode
+prior	defaultvar.h	/^	struct dnode *prior;$/;"	m	struct:dnode	typeref:struct:dnode::dnode
+next	defaultvar.h	/^	struct dnode *next;$/;"	m	struct:dnode	typeref:struct:dnode::dnode
+dNode	defaultvar.h	/^}dNode;$/;"	t	typeref:struct:dnode
+createdNode	dnode.c	/^dNode *createdNode(int n)$/;"	f
+getNode	dnode.c	/^dNode *getNode(dNode *L, int i)$/;"	f
+getElem	dnode.c	/^ElemType getElem(dNode *L, int i)$/;"	f
+printdNode	dnode.c	/^void printdNode(dNode *L)$/;"	f
 insertdNode	dnode.c	/^int insertdNode(dNode *L, int i, ElemType x)$/;"	f
 int_max	graphic.h	8;"	d
-int_max	test/graphall.cpp	6;"	d	file:
-joseph	joseph.c	/^void joseph(int n, int s, int m)$/;"	f
-key	binary.c	/^    keytype key[MAX];$/;"	m	struct:table	file:
-key	bitree.h	/^    keytype key;$/;"	m	struct:bitnode
-keytype	binary.c	4;"	d	file:
-keytype	bitree.h	5;"	d
-kind	graphic.h	/^    int kind;$/;"	m	struct:__anon4
-kind	test/graphall.cpp	/^    int kind;$/;"	m	struct:__anon14	file:
-kmpIndex	kmp.c	/^int kmpIndex(char *s, char *t)$/;"	f
-kruscal_arc	graphic.h	/^void kruscal_arc(MGraph_L G, algraph gra)$/;"	f
-kruscal_arc	test/graphall.cpp	/^void kruscal_arc(MGraph_L G, algraph gra)$/;"	f
-lastarc	test/graph.h	/^    arctype *lastarc;$/;"	m	struct:__anon9
-lchild	bitree.h	/^    struct bitnode *lchild, *rchild;$/;"	m	struct:bitnode	typeref:struct:bitnode::bitnode
-lchild	huffman.c	/^    unsigned int lchild;$/;"	m	struct:__anon5	file:
-lchild	tree.c	/^    struct treeNode *lchild;$/;"	m	struct:treeNode	typeref:struct:treeNode::treeNode	file:
-length	binary.c	/^    int length;$/;"	m	struct:table	file:
-length	defaultvar.h	/^    int length;$/;"	m	struct:__anon2
-length	test/sqlist2.c	/^    int length;$/;"	m	struct:__anon17	file:
-length	test/teststruct.c	/^    int length;$/;"	m	struct:__anon18	file:
-link	crucialpath.c	/^    edgenode *link;$/;"	m	struct:__anon1	file:
-linklist	joseph.c	/^}linklist;$/;"	t	typeref:struct:lnode	file:
-linkqueue	test/graphall.cpp	/^} linkqueue;$/;"	t	typeref:struct:__anon15	file:
-listsize	defaultvar.h	/^    int listsize;$/;"	m	struct:__anon2
-listsize	test/sqlist2.c	/^    int listsize;$/;"	m	struct:__anon17	file:
-ljjzprint	test/graphall.cpp	/^void ljjzprint(MGraph_L G) \/\/邻接矩阵的输出$/;"	f
-lnode	joseph.c	/^typedef struct lnode$/;"	s	file:
-locPoint	test/graph.c	/^int locPoint(graphtype *graph, nametype v)$/;"	f
-locVertex	crucialpath.c	/^int locVertex(vexnode *graph, int v)$/;"	f
-locVertex	test/graph.c	/^int locVertex(vertextype *graph, datatype v)$/;"	f
+inf	graphic.h	9;"	d
+max	graphic.h	10;"	d
+ArcCell	graphic.h	/^typedef struct ArcCell$/;"	s
+adj	graphic.h	/^    int adj;$/;"	m	struct:ArcCell
+info	graphic.h	/^    char *info;$/;"	m	struct:ArcCell
+ArcCell	graphic.h	/^} ArcCell, AdjMatrix[max][max];$/;"	t	typeref:struct:ArcCell
+AdjMatrix	graphic.h	/^} ArcCell, AdjMatrix[max][max];$/;"	t	typeref:struct:ArcCell
+vexs	graphic.h	/^    char vexs[max];$/;"	m	struct:__anon3
+arcs	graphic.h	/^    AdjMatrix arcs;$/;"	m	struct:__anon3
+vexnum	graphic.h	/^    int vexnum, arcnum;$/;"	m	struct:__anon3
+arcnum	graphic.h	/^    int vexnum, arcnum;$/;"	m	struct:__anon3
+MGraph_L	graphic.h	/^} MGraph_L;$/;"	t	typeref:struct:__anon3
 localvex	graphic.h	/^int localvex(MGraph_L G, char v) \/\/返回V的位置$/;"	f
-localvex	test/graphall.cpp	/^int localvex(MGraph_L G, char v) \/\/返回V的位置$/;"	f
-lowcost	test/graphall.cpp	/^    int lowcost;$/;"	m	struct:__anon16	file:
-main	bf.c	/^int main()$/;"	f
-main	binary.c	/^int main()$/;"	f
-main	crucialpath.c	/^int main()$/;"	f
+arcnode	graphic.h	/^typedef struct arcnode\/\/弧结点$/;"	s
+adjvex	graphic.h	/^    int adjvex;\/\/该弧指向的顶点的位置$/;"	m	struct:arcnode
+nextarc	graphic.h	/^    struct arcnode *nextarc;\/\/弧尾相同的下一条弧$/;"	m	struct:arcnode	typeref:struct:arcnode::arcnode
+info	graphic.h	/^    char *info;\/\/该弧信息$/;"	m	struct:arcnode
+dut	graphic.h	/^    int dut;\/\/该弧的度$/;"	m	struct:arcnode
+arcnode	graphic.h	/^} arcnode;$/;"	t	typeref:struct:arcnode
+vnode	graphic.h	/^typedef struct vnode\/\/邻接链表顶点头接点$/;"	s
+data	graphic.h	/^    char data;\/\/结点信息$/;"	m	struct:vnode
+indgree	graphic.h	/^    int indgree; \/\/入度$/;"	m	struct:vnode
+firstarc	graphic.h	/^    arcnode *firstarc;\/\/指向第一条依附该结点的弧的指针$/;"	m	struct:vnode
+vnode	graphic.h	/^} vnode, adjlist;$/;"	t	typeref:struct:vnode
+adjlist	graphic.h	/^} vnode, adjlist;$/;"	t	typeref:struct:vnode
+vertices	graphic.h	/^    adjlist vertices[max];$/;"	m	struct:__anon4
+vexnum	graphic.h	/^    int vexnum, arcnum;$/;"	m	struct:__anon4
+arcnum	graphic.h	/^    int vexnum, arcnum;$/;"	m	struct:__anon4
+kind	graphic.h	/^    int kind;$/;"	m	struct:__anon4
+algraph	graphic.h	/^} algraph;$/;"	t	typeref:struct:__anon4
+visited	graphic.h	/^int visited[max];\/\/访问标记$/;"	v
+creatGraph	graphic.h	/^int creatGraph(MGraph_L *G, algraph *ga)\/\/创建图用邻接矩阵表示$/;"	f
+printMatrix	graphic.h	/^void printMatrix(MGraph_L G) \/\/邻接矩阵的输出$/;"	f
+printAlList	graphic.h	/^void printAlList(algraph gra) \/\/邻接表输出$/;"	f
+bfs	graphic.h	/^void bfs(algraph graph, int v)$/;"	f
+dfs	graphic.h	/^void dfs(algraph graph, int v)$/;"	f
+dfstra	graphic.h	/^void dfstra(algraph graph)$/;"	f
+bfstra_fen	graphic.h	/^int bfstra_fen(algraph gra)\/\/求连通分量$/;"	f
+prim	graphic.h	/^int prim(int g[][max], int n) \/\/最小生成树PRIM算法$/;"	f
+acrvisited	graphic.h	/^int acrvisited[100];\/\/kruscal弧标记数组$/;"	v
+acr	graphic.h	/^typedef struct acr$/;"	s
+pre	graphic.h	/^    int pre;\/\/弧的一结点$/;"	m	struct:acr
+bak	graphic.h	/^    int bak;\/\/弧另一结点$/;"	m	struct:acr
+weight	graphic.h	/^    int weight;\/\/弧的权$/;"	m	struct:acr
+edg	graphic.h	/^}edg;$/;"	t	typeref:struct:acr
+find	graphic.h	/^int find(int acrvisited[], int f)$/;"	f
+kruscal_arc	graphic.h	/^void kruscal_arc(MGraph_L G, algraph gra)$/;"	f
+toposort	graphic.h	/^void toposort(algraph ga)$/;"	f
+MAX	huffman.c	3;"	d	file:
+weight	huffman.c	/^    unsigned int weight;$/;"	m	struct:__anon5	file:
+parent	huffman.c	/^    unsigned int parent;$/;"	m	struct:__anon5	file:
+lchild	huffman.c	/^    unsigned int lchild;$/;"	m	struct:__anon5	file:
+rchild	huffman.c	/^    unsigned int rchild;$/;"	m	struct:__anon5	file:
+huffmTree	huffman.c	/^}huffmTree;$/;"	t	typeref:struct:__anon5	file:
+huffmCode	huffman.c	/^typedef char **huffmCode;$/;"	t	file:
+ch	huffman.c	/^    unsigned ch;$/;"	m	struct:__anon6	file:
+fr	huffman.c	/^    unsigned long fr;$/;"	m	struct:__anon6	file:
+wd	huffman.c	/^}wd;$/;"	t	typeref:struct:__anon6	file:
+huffmanCoding	huffman.c	/^huffmCode huffmanCoding(huffmTree *HT, huffmCode HC, wd w[MAX], int n)$/;"	f
+select	huffman.c	/^void select(huffmTree *HT, int n, int *s1, int *s2)$/;"	f
+displayHuffm	huffman.c	/^void displayHuffm(huffmCode HC, int n)$/;"	f
 main	huffman.c	/^int main()$/;"	f
+datatype	joseph.c	16;"	d	file:
+MAX	joseph.c	17;"	d	file:
+ERROR	joseph.c	18;"	d	file:
+lnode	joseph.c	/^typedef struct lnode$/;"	s	file:
+data	joseph.c	/^    datatype data;$/;"	m	struct:lnode	file:
+next	joseph.c	/^    struct lnode *next;$/;"	m	struct:lnode	typeref:struct:lnode::lnode	file:
+linklist	joseph.c	/^}linklist;$/;"	t	typeref:struct:lnode	file:
+create	joseph.c	/^linklist * create(int n)$/;"	f
+joseph	joseph.c	/^void joseph(int n, int s, int m)$/;"	f
 main	joseph.c	/^int main()$/;"	f
+MAX	kmp.c	3;"	d	file:
+next	kmp.c	/^int next[MAX];$/;"	v
+calNext	kmp.c	/^void calNext(char *t)$/;"	f
+calNext2	kmp.c	/^void calNext2(char *t)$/;"	f
+kmpIndex	kmp.c	/^int kmpIndex(char *s, char *t)$/;"	f
 main	kmp.c	/^int main()$/;"	f
+createNode	lnode.c	/^NODE* createNode (int n)$/;"	f
+deleteNode	lnode.c	/^int deleteNode(NODE *head, int i)$/;"	f
+insertNode	lnode.c	/^int insertNode(NODE *head, NODE *p, int k)$/;"	f
+printNode	lnode.c	/^void printNode(NODE *head)$/;"	f
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -g -ggdb3$/;"	m
+PROJECT	Makefile	/^PROJECT = all$/;"	m
+MODULES	Makefile	/^MODULES = testsqlist testlnode$/;"	m
+SRCS	Makefile	/^SRCS = sqlist testsqlist lnode testlnode$/;"	m
+OBJS	Makefile	/^OBJS = $(addsuffix .o, $(SRCS))$/;"	m
+MAX	maze.c	13;"	d	file:
+STEP	maze.c	14;"	d	file:
+vert	maze.c	/^    int vert;$/;"	m	struct:__anon7	file:
+horiz	maze.c	/^    int horiz;$/;"	m	struct:__anon7	file:
+offset	maze.c	/^}offset;$/;"	t	typeref:struct:__anon7	file:
+move	maze.c	/^offset move[4];$/;"	v
+top	maze.c	/^    int top;$/;"	m	struct:__anon8	file:
+d1	maze.c	/^    int d1[STEP];$/;"	m	struct:__anon8	file:
+d2	maze.c	/^    int d2[STEP];$/;"	m	struct:__anon8	file:
+dir	maze.c	/^    int dir[STEP];$/;"	m	struct:__anon8	file:
+stack	maze.c	/^}stack;$/;"	t	typeref:struct:__anon8	file:
+drawMaze	maze.c	/^void drawMaze(int *p, int row, int col)$/;"	f
+drawMaze2	maze.c	/^void drawMaze2(int *p, int row, int col)$/;"	f
+addMaze	maze.c	/^void addMaze(int *p, int col, int i, int j, int var)$/;"	f
+printMaze	maze.c	/^void printMaze(int *p, int row, int col)$/;"	f
+pop	maze.c	/^void pop(stack *s, int *x, int *y, int *d)$/;"	f
+push	maze.c	/^void push(stack *s, int x, int y, int d)$/;"	f
+path	maze.c	/^void path(int *maze, int row, int col)$/;"	f
 main	maze.c	/^int main()$/;"	f
+node	node.c	/^typedef struct node$/;"	s	file:
+data	node.c	/^    int data;$/;"	m	struct:node	file:
+next	node.c	/^    struct node *next;$/;"	m	struct:node	typeref:struct:node::node	file:
+NODE	node.c	/^}NODE;$/;"	t	typeref:struct:node	file:
+create	node.c	/^NODE* create (int n)$/;"	f
+deleteNode	node.c	/^int deleteNode(NODE *head, int i)$/;"	f
+insertNode	node.c	/^int insertNode(NODE *head, NODE *p, int k)$/;"	f
+print	node.c	/^void print(NODE *head)$/;"	f
 main	node.c	/^int main(void)$/;"	f
+maxnode	prim.c	32;"	d	file:
+prim	prim.c	/^void prim(graphtype *ga, int n, int v)$/;"	f
 main	prim.c	/^int main()$/;"	f
+MAX	shortest.c	3;"	d	file:
+MAXCOST	shortest.c	4;"	d	file:
+miniDistance	shortest.c	/^int miniDistance[MAX];$/;"	v
+cost	shortest.c	/^int cost [MAX][MAX];$/;"	v
+path	shortest.c	/^int path [MAX];         \/\/新建一个数组用于依次记录距离最短的顶点，方便显示结果$/;"	v
+dijkstra	shortest.c	/^void dijkstra(int n, int v0)$/;"	f
+initCost	shortest.c	/^void initCost()$/;"	f
 main	shortest.c	/^int main()$/;"	f
+MAX	shortestall.c	3;"	d	file:
+MAXCOST	shortestall.c	4;"	d	file:
+cost	shortestall.c	/^int cost [MAX][MAX];$/;"	v
+weight	shortestall.c	/^int weight [MAX][MAX];$/;"	v
+path	shortestall.c	/^int path [MAX][MAX];$/;"	v
+initCost	shortestall.c	/^void initCost()$/;"	f
+floyd	shortestall.c	/^void floyd(int n)$/;"	f
 main	shortestall.c	/^int main()$/;"	f
+INF	sort.c	28;"	d	file:
+MAX	sort.c	29;"	d	file:
+datatype	sort.c	30;"	d	file:
+insertSort	sort.c	/^int insertSort(datatype data[], int n)$/;"	f
+binsertSort	sort.c	/^int binsertSort(datatype data[], int n)$/;"	f
+shellSort	sort.c	/^int shellSort(datatype data[], int n)$/;"	f
+bubbleSort	sort.c	/^int bubbleSort(datatype data[], int n)$/;"	f
+quickSort	sort.c	/^int quickSort(datatype data[], int n)$/;"	f
+quickSortR	sort.c	/^int quickSortR(datatype data[], int l, int h)$/;"	f
+selectSort	sort.c	/^int selectSort(datatype data[], int n)$/;"	f
+heapSort	sort.c	/^int heapSort(datatype data[], int n)$/;"	f
+heapDelete	sort.c	/^int heapDelete(datatype data[], int n)$/;"	f
+heapSift	sort.c	/^int heapSift(datatype data[], int l, int h)$/;"	f
+mergeSort	sort.c	/^int mergeSort(datatype data[], int n)$/;"	f
+mergeR	sort.c	/^int mergeR(datatype r[], int l, int m, int h)$/;"	f
+createData	sort.c	/^int createData(datatype data[])$/;"	f
+printData	sort.c	/^int printData(datatype data[], int n)$/;"	f
+copyData	sort.c	/^int copyData(datatype orig[], datatype new[], int n)$/;"	f
+main	sort.c	/^int main()$/;"	f
+InitSqList	sqlist.c	/^void InitSqList(SqList *L)$/;"	f
+CreateSqList	sqlist.c	/^void CreateSqList(SqList *L, int n)$/;"	f
+PrintSqList	sqlist.c	/^void PrintSqList(SqList *L)$/;"	f
+DestroySqList	sqlist.c	/^void DestroySqList(SqList *L)$/;"	f
+SqListInsert	sqlist.c	/^int SqListInsert(SqList *L, int i, ElemType x)$/;"	f
+SqListDelete	sqlist.c	/^int SqListDelete(SqList *L, int i)$/;"	f
+LocateElem	sqlist.c	/^int LocateElem(SqList *L, ElemType x)$/;"	f
+ReserveSqList	sqlist.c	/^int ReserveSqList(SqList *L)$/;"	f
+M	test/array.c	3;"	d	file:
+N	test/array.c	4;"	d	file:
+stuScore	test/array.c	/^int stuScore(int score[], int i)$/;"	f
+courseTotal	test/array.c	/^int courseTotal(int score[], int j)$/;"	f
+printArray	test/array.c	/^void printArray(int array[])$/;"	f
 main	test/array.c	/^int main()$/;"	f
+bfs	test/bfs.c	/^void bfs(vertextype *graph, int v, int n)$/;"	f
 main	test/bfs.c	/^int main()$/;"	f
+depthTraver	test/dfs.c	/^void depthTraver(vertextype *graph, int n)$/;"	f
+dfs	test/dfs.c	/^void dfs(vertextype *graph, int v, int visited[])$/;"	f
 main	test/dfs.c	/^int main()$/;"	f
+createGraph	test/graph.c	/^vertextype* createGraph(int n, int e)$/;"	f
+printGraph	test/graph.c	/^void printGraph(vertextype *graph, int n)$/;"	f
+locVertex	test/graph.c	/^int locVertex(vertextype *graph, datatype v)$/;"	f
+locPoint	test/graph.c	/^int locPoint(graphtype *graph, nametype v)$/;"	f
+createGraphMatrix	test/graph.c	/^graphtype * createGraphMatrix(int n, int e)$/;"	f
+createGraphMatrix2	test/graph.c	/^graphtype * createGraphMatrix2(int n, int e)$/;"	f
+genEdge	test/graph.c	/^void genEdge(graphtype *ga, int i, int j, int w)$/;"	f
+datatype	test/graph.h	3;"	d
+nametype	test/graph.h	4;"	d
+MAX	test/graph.h	5;"	d
+INF	test/graph.h	6;"	d
+arc	test/graph.h	/^typedef struct arc$/;"	s
+adv	test/graph.h	/^    int adv; \/\/顶点序号$/;"	m	struct:arc
+nextarc	test/graph.h	/^    struct arc *nextarc;$/;"	m	struct:arc	typeref:struct:arc::arc
+arctype	test/graph.h	/^}arctype;$/;"	t	typeref:struct:arc
+vertex	test/graph.h	/^    datatype vertex;$/;"	m	struct:__anon9
+firstarc	test/graph.h	/^    arctype *firstarc;$/;"	m	struct:__anon9
+lastarc	test/graph.h	/^    arctype *lastarc;$/;"	m	struct:__anon9
+vertextype	test/graph.h	/^}vertextype;$/;"	t	typeref:struct:__anon9
+name	test/graph.h	/^    nametype name;$/;"	m	struct:__anon10
+pointype	test/graph.h	/^}pointype;$/;"	t	typeref:struct:__anon10
+weight	test/graph.h	/^    int weight;$/;"	m	struct:__anon11
+edgetype	test/graph.h	/^}edgetype;$/;"	t	typeref:struct:__anon11
+points	test/graph.h	/^    pointype points[MAX];$/;"	m	struct:__anon12
+edges	test/graph.h	/^    edgetype edges[MAX][MAX];$/;"	m	struct:__anon12
+graphtype	test/graph.h	/^}graphtype;$/;"	t	typeref:struct:__anon12
+int_max	test/graphall.cpp	6;"	d	file:
+inf	test/graphall.cpp	7;"	d	file:
+max	test/graphall.cpp	8;"	d	file:
+ArcCell	test/graphall.cpp	/^typedef struct ArcCell$/;"	s	file:
+adj	test/graphall.cpp	/^    int adj;$/;"	m	struct:ArcCell	file:
+info	test/graphall.cpp	/^    char *info;$/;"	m	struct:ArcCell	file:
+ArcCell	test/graphall.cpp	/^} ArcCell, AdjMatrix[max][max];$/;"	t	typeref:struct:ArcCell	file:
+AdjMatrix	test/graphall.cpp	/^} ArcCell, AdjMatrix[max][max];$/;"	t	typeref:struct:ArcCell	file:
+vexs	test/graphall.cpp	/^    char vexs[max];$/;"	m	struct:__anon13	file:
+arcs	test/graphall.cpp	/^    AdjMatrix arcs;$/;"	m	struct:__anon13	file:
+vexnum	test/graphall.cpp	/^    int vexnum, arcnum;$/;"	m	struct:__anon13	file:
+arcnum	test/graphall.cpp	/^    int vexnum, arcnum;$/;"	m	struct:__anon13	file:
+MGraph_L	test/graphall.cpp	/^} MGraph_L;$/;"	t	typeref:struct:__anon13	file:
+localvex	test/graphall.cpp	/^int localvex(MGraph_L G, char v) \/\/返回V的位置$/;"	f
+creatMGraph_L	test/graphall.cpp	/^int creatMGraph_L(MGraph_L &G)\/\/创建图用邻接矩阵表示$/;"	f
+ljjzprint	test/graphall.cpp	/^void ljjzprint(MGraph_L G) \/\/邻接矩阵的输出$/;"	f
+visited	test/graphall.cpp	/^int visited[max];\/\/访问标记$/;"	v
+we	test/graphall.cpp	/^int we;$/;"	v
+arcnode	test/graphall.cpp	/^typedef struct arcnode\/\/弧结点$/;"	s	file:
+adjvex	test/graphall.cpp	/^    int adjvex;\/\/该弧指向的顶点的位置$/;"	m	struct:arcnode	file:
+nextarc	test/graphall.cpp	/^    struct arcnode *nextarc;\/\/弧尾相同的下一条弧$/;"	m	struct:arcnode	typeref:struct:arcnode::arcnode	file:
+info	test/graphall.cpp	/^    char *info;\/\/该弧信息$/;"	m	struct:arcnode	file:
+arcnode	test/graphall.cpp	/^} arcnode;$/;"	t	typeref:struct:arcnode	file:
+vnode	test/graphall.cpp	/^typedef struct vnode\/\/邻接链表顶点头接点$/;"	s	file:
+data	test/graphall.cpp	/^    char data;\/\/结点信息$/;"	m	struct:vnode	file:
+firstarc	test/graphall.cpp	/^    arcnode *firstarc;\/\/指向第一条依附该结点的弧的指针$/;"	m	struct:vnode	file:
+vnode	test/graphall.cpp	/^} vnode, adjlist;$/;"	t	typeref:struct:vnode	file:
+adjlist	test/graphall.cpp	/^} vnode, adjlist;$/;"	t	typeref:struct:vnode	file:
+vertices	test/graphall.cpp	/^    adjlist vertices[max];$/;"	m	struct:__anon14	file:
+vexnum	test/graphall.cpp	/^    int vexnum, arcnum;$/;"	m	struct:__anon14	file:
+arcnum	test/graphall.cpp	/^    int vexnum, arcnum;$/;"	m	struct:__anon14	file:
+kind	test/graphall.cpp	/^    int kind;$/;"	m	struct:__anon14	file:
+algraph	test/graphall.cpp	/^} algraph;$/;"	t	typeref:struct:__anon14	file:
+qnode	test/graphall.cpp	/^typedef struct qnode$/;"	s	file:
+data	test/graphall.cpp	/^    int data;$/;"	m	struct:qnode	file:
+next	test/graphall.cpp	/^    struct qnode *next;$/;"	m	struct:qnode	typeref:struct:qnode::qnode	file:
+qnode	test/graphall.cpp	/^} qnode, *queueptr;$/;"	t	typeref:struct:qnode	file:
+queueptr	test/graphall.cpp	/^} qnode, *queueptr;$/;"	t	typeref:struct:qnode	file:
+front	test/graphall.cpp	/^    queueptr front;$/;"	m	struct:__anon15	file:
+rear	test/graphall.cpp	/^    queueptr rear;$/;"	m	struct:__anon15	file:
+linkqueue	test/graphall.cpp	/^} linkqueue;$/;"	t	typeref:struct:__anon15	file:
+acr	test/graphall.cpp	/^typedef struct acr$/;"	s	file:
+pre	test/graphall.cpp	/^    int pre;\/\/弧的一结点$/;"	m	struct:acr	file:
+bak	test/graphall.cpp	/^    int bak;\/\/弧另一结点$/;"	m	struct:acr	file:
+weight	test/graphall.cpp	/^    int weight;\/\/弧的权$/;"	m	struct:acr	file:
+edg	test/graphall.cpp	/^} edg;$/;"	t	typeref:struct:acr	file:
+creatadj	test/graphall.cpp	/^int creatadj(algraph &gra, MGraph_L G) \/\/用邻接表存储图$/;"	f
+adjprint	test/graphall.cpp	/^void adjprint(algraph gra) \/\/邻接表输出$/;"	f
+firstadjvex	test/graphall.cpp	/^int firstadjvex(algraph gra, vnode v) \/\/返回依附顶点V的第一个点$/;"	f
+nextadjvex	test/graphall.cpp	/^int nextadjvex(algraph gra, vnode v, int w) \/\/返回依附顶点V的相对于W的下一个顶点$/;"	f
+initqueue	test/graphall.cpp	/^int initqueue(linkqueue &q)\/\/初始化队列$/;"	f
+enqueue	test/graphall.cpp	/^int enqueue(linkqueue &q, int e) \/\/入队$/;"	f
+dequeue	test/graphall.cpp	/^int dequeue(linkqueue &q, int &e) \/\/出队$/;"	f
+queueempty	test/graphall.cpp	/^int queueempty(linkqueue q)\/\/判断队为空$/;"	f
+bfstra	test/graphall.cpp	/^void bfstra(algraph gra)\/\/广度优先遍历$/;"	f
+dfs	test/graphall.cpp	/^int dfs(algraph gra, int i)$/;"	f
+dfstra	test/graphall.cpp	/^int dfstra(algraph gra)$/;"	f
+bfstra_fen	test/graphall.cpp	/^int bfstra_fen(algraph gra)\/\/求连通分量$/;"	f
+adjvex	test/graphall.cpp	/^    int adjvex;$/;"	m	struct:__anon16	file:
+lowcost	test/graphall.cpp	/^    int lowcost;$/;"	m	struct:__anon16	file:
+closedge	test/graphall.cpp	/^} closedge;$/;"	t	typeref:struct:__anon16	file:
+prim	test/graphall.cpp	/^int prim(int g[][max], int n) \/\/最小生成树PRIM算法$/;"	f
+acrvisited	test/graphall.cpp	/^int acrvisited[100];\/\/kruscal弧标记数组$/;"	v
+find	test/graphall.cpp	/^int find(int acrvisited[], int f)$/;"	f
+kruscal_arc	test/graphall.cpp	/^void kruscal_arc(MGraph_L G, algraph gra)$/;"	f
 main	test/graphall.cpp	/^int main()$/;"	f
+node	test/node.c	/^typedef struct node$/;"	s	file:
+data	test/node.c	/^    int data;$/;"	m	struct:node	file:
+next	test/node.c	/^    struct node *next;$/;"	m	struct:node	typeref:struct:node::node	file:
+NODE	test/node.c	/^}NODE;$/;"	t	typeref:struct:node	file:
+create	test/node.c	/^NODE* create (int n)$/;"	f
+deleteNode	test/node.c	/^int deleteNode(NODE *head, int i)$/;"	f
+insertNode	test/node.c	/^int insertNode(NODE *head, NODE *p, int k)$/;"	f
+print	test/node.c	/^void print(NODE *head)$/;"	f
 main	test/node.c	/^int main(void)$/;"	f
+TURE	test/sqlist2.c	3;"	d	file:
+FALSE	test/sqlist2.c	4;"	d	file:
+OK	test/sqlist2.c	5;"	d	file:
+ERROR	test/sqlist2.c	6;"	d	file:
+OVERFLOW	test/sqlist2.c	7;"	d	file:
+List_Size	test/sqlist2.c	8;"	d	file:
+ListIncrement	test/sqlist2.c	9;"	d	file:
+ElemType	test/sqlist2.c	/^typedef int ElemType;$/;"	t	file:
+elem	test/sqlist2.c	/^    ElemType *elem;$/;"	m	struct:__anon17	file:
+length	test/sqlist2.c	/^    int length;$/;"	m	struct:__anon17	file:
+listsize	test/sqlist2.c	/^    int listsize;$/;"	m	struct:__anon17	file:
+sqlist	test/sqlist2.c	/^}sqlist;$/;"	t	typeref:struct:__anon17	file:
+Initsqlist	test/sqlist2.c	/^void Initsqlist(sqlist *L)$/;"	f
+Createsqlist	test/sqlist2.c	/^void Createsqlist(sqlist *L, int n)$/;"	f
+Destroysqlist	test/sqlist2.c	/^void Destroysqlist(sqlist *L)$/;"	f
+sqlistInsert	test/sqlist2.c	/^int sqlistInsert(sqlist *L, int i, ElemType x)$/;"	f
 main	test/sqlist2.c	/^int main(void)$/;"	f
 main	test/testgraph.c	/^int main()$/;"	f
 main	test/testmalloc.c	/^int main(void)$/;"	f
+maxsize	test/teststruct.c	3;"	d	file:
+data	test/teststruct.c	/^    int *data;$/;"	m	struct:__anon18	file:
+length	test/teststruct.c	/^    int length;$/;"	m	struct:__anon18	file:
+slist	test/teststruct.c	/^}slist;$/;"	t	typeref:struct:__anon18	file:
+init	test/teststruct.c	/^void init(slist *s)$/;"	f
 main	test/teststruct.c	/^int main(void)$/;"	f
 main	testbitree.c	/^int main()$/;"	f
 main	testdnode.c	/^int main(void)$/;"	f
 main	testgraphic.c	/^int main()$/;"	f
 main	testlnode.c	/^int main(void)$/;"	f
 main	testsqlist.c	/^int main(void)$/;"	f
-main	tree.c	/^int main()$/;"	f
-max	graphic.h	10;"	d
-max	test/graphall.cpp	8;"	d	file:
-maxnode	prim.c	32;"	d	file:
-maxsize	test/teststruct.c	3;"	d	file:
-miniDistance	shortest.c	/^int miniDistance[MAX];$/;"	v
-move	maze.c	/^offset move[4];$/;"	v
-name	test/graph.h	/^    nametype name;$/;"	m	struct:__anon10
-nametype	test/graph.h	4;"	d
-next	crucialpath.c	/^    struct node *next;$/;"	m	struct:node	typeref:struct:node::node	file:
-next	defaultvar.h	/^	struct dnode *next;$/;"	m	struct:dnode	typeref:struct:dnode::dnode
-next	defaultvar.h	/^    struct node *next;$/;"	m	struct:node	typeref:struct:node::node
-next	joseph.c	/^    struct lnode *next;$/;"	m	struct:lnode	typeref:struct:lnode::lnode	file:
-next	kmp.c	/^int next[MAX];$/;"	v
-next	node.c	/^    struct node *next;$/;"	m	struct:node	typeref:struct:node::node	file:
-next	test/graphall.cpp	/^    struct qnode *next;$/;"	m	struct:qnode	typeref:struct:qnode::qnode	file:
-next	test/node.c	/^    struct node *next;$/;"	m	struct:node	typeref:struct:node::node	file:
-nextadjvex	test/graphall.cpp	/^int nextadjvex(algraph gra, vnode v, int w) \/\/返回依附顶点V的相对于W的下一个顶点$/;"	f
-nextarc	graphic.h	/^    struct arcnode *nextarc;\/\/弧尾相同的下一条弧$/;"	m	struct:arcnode	typeref:struct:arcnode::arcnode
-nextarc	test/graph.h	/^    struct arc *nextarc;$/;"	m	struct:arc	typeref:struct:arc::arc
-nextarc	test/graphall.cpp	/^    struct arcnode *nextarc;\/\/弧尾相同的下一条弧$/;"	m	struct:arcnode	typeref:struct:arcnode::arcnode	file:
-node	crucialpath.c	/^typedef struct node$/;"	s	file:
-node	defaultvar.h	/^typedef struct node$/;"	s
-node	node.c	/^typedef struct node$/;"	s	file:
-node	test/node.c	/^typedef struct node$/;"	s	file:
-offset	maze.c	/^}offset;$/;"	t	typeref:struct:__anon7	file:
-parent	huffman.c	/^    unsigned int parent;$/;"	m	struct:__anon5	file:
-path	maze.c	/^void path(int *maze, int row, int col)$/;"	f
-path	shortest.c	/^int path [MAX];         \/\/新建一个数组用于依次记录距离最短的顶点，方便显示结果$/;"	v
-path	shortestall.c	/^int path [MAX][MAX];$/;"	v
-points	test/graph.h	/^    pointype points[MAX];$/;"	m	struct:__anon12
-pointype	test/graph.h	/^}pointype;$/;"	t	typeref:struct:__anon10
-pop	maze.c	/^void pop(stack *s, int *x, int *y, int *d)$/;"	f
-postOrder	tree.c	/^void postOrder(btree *t)$/;"	f
-pre	graphic.h	/^    int pre;\/\/弧的一结点$/;"	m	struct:acr
-pre	test/graphall.cpp	/^    int pre;\/\/弧的一结点$/;"	m	struct:acr	file:
-preOrder	tree.c	/^void preOrder(btree *t)$/;"	f
-prim	graphic.h	/^int prim(int g[][max], int n) \/\/最小生成树PRIM算法$/;"	f
-prim	prim.c	/^void prim(graphtype *ga, int n, int v)$/;"	f
-prim	test/graphall.cpp	/^int prim(int g[][max], int n) \/\/最小生成树PRIM算法$/;"	f
-print	node.c	/^void print(NODE *head)$/;"	f
-print	test/node.c	/^void print(NODE *head)$/;"	f
-printAlList	graphic.h	/^void printAlList(algraph gra) \/\/邻接表输出$/;"	f
-printArray	test/array.c	/^void printArray(int array[])$/;"	f
-printGraph	test/graph.c	/^void printGraph(vertextype *graph, int n)$/;"	f
-printMatrix	graphic.h	/^void printMatrix(MGraph_L G) \/\/邻接矩阵的输出$/;"	f
-printMaze	maze.c	/^void printMaze(int *p, int row, int col)$/;"	f
-printNode	lnode.c	/^void printNode(NODE *head)$/;"	f
-printdNode	dnode.c	/^void printdNode(dNode *L)$/;"	f
-prior	defaultvar.h	/^	struct dnode *prior;$/;"	m	struct:dnode	typeref:struct:dnode::dnode
-push	maze.c	/^void push(stack *s, int x, int y, int d)$/;"	f
-qnode	test/graphall.cpp	/^typedef struct qnode$/;"	s	file:
-qnode	test/graphall.cpp	/^} qnode, *queueptr;$/;"	t	typeref:struct:qnode	file:
-queueempty	test/graphall.cpp	/^int queueempty(linkqueue q)\/\/判断队为空$/;"	f
-queueptr	test/graphall.cpp	/^} qnode, *queueptr;$/;"	t	typeref:struct:qnode	file:
-rchild	bitree.h	/^    struct bitnode *lchild, *rchild;$/;"	m	struct:bitnode	typeref:struct:bitnode::
-rchild	huffman.c	/^    unsigned int rchild;$/;"	m	struct:__anon5	file:
-rchild	tree.c	/^    struct treeNode *rchild;$/;"	m	struct:treeNode	typeref:struct:treeNode::treeNode	file:
-rear	test/graphall.cpp	/^    queueptr rear;$/;"	m	struct:__anon15	file:
-searchBitree	bitree.h	/^int searchBitree(bitree T, keytype key, bitree f, bitree *p)$/;"	f
-select	huffman.c	/^void select(huffmTree *HT, int n, int *s1, int *s2)$/;"	f
-slist	test/teststruct.c	/^}slist;$/;"	t	typeref:struct:__anon18	file:
-sqlist	test/sqlist2.c	/^}sqlist;$/;"	t	typeref:struct:__anon17	file:
-sqlistInsert	test/sqlist2.c	/^int sqlistInsert(sqlist *L, int i, ElemType x)$/;"	f
-stack	maze.c	/^}stack;$/;"	t	typeref:struct:__anon8	file:
-stuScore	test/array.c	/^int stuScore(int score[], int i)$/;"	f
-table	binary.c	/^typedef struct table$/;"	s	file:
-table	binary.c	/^}table;$/;"	t	typeref:struct:table	file:
-top	maze.c	/^    int top;$/;"	m	struct:__anon8	file:
-toposort	graphic.h	/^void toposort(algraph ga)$/;"	f
+MAX	tree.c	36;"	d	file:
+datatype	tree.c	37;"	d	file:
 treeNode	tree.c	/^typedef struct treeNode$/;"	s	file:
-vert	maze.c	/^    int vert;$/;"	m	struct:__anon7	file:
-vertex	crucialpath.c	/^    vextype vertex;$/;"	m	struct:__anon1	file:
-vertex	test/graph.h	/^    datatype vertex;$/;"	m	struct:__anon9
-vertextype	test/graph.h	/^}vertextype;$/;"	t	typeref:struct:__anon9
-vertices	graphic.h	/^    adjlist vertices[max];$/;"	m	struct:__anon4
-vertices	test/graphall.cpp	/^    adjlist vertices[max];$/;"	m	struct:__anon14	file:
-vexnode	crucialpath.c	/^}vexnode;$/;"	t	typeref:struct:__anon1	file:
-vexnum	graphic.h	/^    int vexnum, arcnum;$/;"	m	struct:__anon3
-vexnum	graphic.h	/^    int vexnum, arcnum;$/;"	m	struct:__anon4
-vexnum	test/graphall.cpp	/^    int vexnum, arcnum;$/;"	m	struct:__anon13	file:
-vexnum	test/graphall.cpp	/^    int vexnum, arcnum;$/;"	m	struct:__anon14	file:
-vexs	graphic.h	/^    char vexs[max];$/;"	m	struct:__anon3
-vexs	test/graphall.cpp	/^    char vexs[max];$/;"	m	struct:__anon13	file:
-vextype	crucialpath.c	/^typedef int vextype;$/;"	t	file:
-visited	graphic.h	/^int visited[max];\/\/访问标记$/;"	v
-visited	test/graphall.cpp	/^int visited[max];\/\/访问标记$/;"	v
-vnode	graphic.h	/^typedef struct vnode\/\/邻接链表顶点头接点$/;"	s
-vnode	graphic.h	/^} vnode, adjlist;$/;"	t	typeref:struct:vnode
-vnode	test/graphall.cpp	/^typedef struct vnode\/\/邻接链表顶点头接点$/;"	s	file:
-vnode	test/graphall.cpp	/^} vnode, adjlist;$/;"	t	typeref:struct:vnode	file:
-wd	huffman.c	/^}wd;$/;"	t	typeref:struct:__anon6	file:
-we	test/graphall.cpp	/^int we;$/;"	v
-weight	graphic.h	/^    int weight;\/\/弧的权$/;"	m	struct:acr
-weight	huffman.c	/^    unsigned int weight;$/;"	m	struct:__anon5	file:
-weight	shortestall.c	/^int weight [MAX][MAX];$/;"	v
-weight	test/graph.h	/^    int weight;$/;"	m	struct:__anon11
-weight	test/graphall.cpp	/^    int weight;\/\/弧的权$/;"	m	struct:acr	file:
+data	tree.c	/^    datatype data;$/;"	m	struct:treeNode	file:
+lchild	tree.c	/^    struct treeNode *lchild;$/;"	m	struct:treeNode	typeref:struct:treeNode::treeNode	file:
+rchild	tree.c	/^    struct treeNode *rchild;$/;"	m	struct:treeNode	typeref:struct:treeNode::treeNode	file:
+btree	tree.c	/^}btree;$/;"	t	typeref:struct:treeNode	file:
+preOrder	tree.c	/^void preOrder(btree *t)$/;"	f
+inOrder	tree.c	/^void inOrder(btree *t)$/;"	f
+postOrder	tree.c	/^void postOrder(btree *t)$/;"	f
+createTree	tree.c	/^btree * createTree()$/;"	f
+main	tree.c	/^int main()$/;"	f

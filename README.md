@@ -5,7 +5,7 @@ datastruct
 二进制文件为Mac OS X 10.8.3下编译，Linux环境请自行gcc一下(*^__^*) <br />
 有任何意见或建议请联系zp@buaa.us <br />
 
-### includes:
+### including:
     链表
     图
     霍夫曼编码
@@ -32,9 +32,9 @@ datastruct
     直接选择排序
     堆排序
     归并排序
+    汉诺塔问题
     （以及其他将要加入的内容。。）
 
 ### in planning:
     平衡二叉树
-    汉诺塔问题
     八皇后问题
